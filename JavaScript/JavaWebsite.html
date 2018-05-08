@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style media="screen">
+p{
+   color: black;
+   font-size: 30px;
+ }
+h1{
+   color: black;
+   font-size: 50px;
+ }
+ img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 250px;
+widows: 350px;
+}
+a:link {
+color: red;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: red;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+body {
+    position: relative;
+    background: url(images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 156%;
+}
+</style>
+</head>
+<body>
+  <button onclick="myFunction()">Whats Up Click Me Please</button>
+
+<h1 align="center">Welcome to my Car Site</h1>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Do like cars if Yes press OK and cancel for No")) {
+        txt = "Great, Then this site if great for your";
+    } else {
+        txt = "You pressed Cancel Get Off This Website then!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

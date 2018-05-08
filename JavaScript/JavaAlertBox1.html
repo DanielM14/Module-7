@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Click For a super fun time on this site don't worry it's not a scam</h1>
+
+<button onclick="myFunction()">FunButton</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "HAHAHAHA! " + person + " you just got scammed you fool ;)";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
